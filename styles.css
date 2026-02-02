@@ -1,11 +1,14 @@
+/* ADD THIS AT THE TOP - Missing font import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
 .bad{
     font-family: 'Poppins', sans-serif;
-    font-size: clamp(1rem, 2vw, 1.8rem); /* Responsive font */
+    font-size: clamp(1rem, 2vw, 1.8rem);
     font-weight: 400;
     color: white;
     background-color: black;
     margin: 0;
-    overflow-x: hidden; /* Prevent horizontal scroll */
+    overflow-x: hidden;
 }
 
 .navbar{
@@ -15,18 +18,18 @@
     width: 100%;
     background: linear-gradient(90deg, #F7941E, #72C6EF, #00A651);
     background-size: 400% 400%;
-    animation: gradientAnimationn7wv7f58h 4s ease infinite;
-    height: auto; /* Changed from fixed 110px */
+    animation: gradientAnimation 4s ease infinite;
+    height: auto;
     min-height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1000;
     padding: 10px 0;
-    flex-wrap: wrap; /* Allow wrapping on mobile */
+    flex-wrap: wrap;
 }
 
-@keyframes gradientAnimationn7wv7f58h {
+@keyframes gradientAnimation {
   0% { background-position: 0% 50%; }
   25% { background-position: 100% 50%; }
   50% { background-position: 100% 100%; }
@@ -43,15 +46,14 @@
     border-radius: 10px;
     cursor: pointer;
     transition: all 0.3s ease;
-    /* Responsive sizing */
     font-size: clamp(14px, 2vw, 25px);
     padding: clamp(8px, 1.5vw, 14px) clamp(10px, 2vw, 16px);
     margin: clamp(5px, 1vw, 15px);
     line-height: 1.4;
-    width: auto; /* Remove fixed width */
-    min-width: 100px; /* Minimum touch target */
-    flex: 1; /* Flexible items */
-    max-width: 180px; /* Maximum size */
+    width: auto;
+    min-width: 100px;
+    flex: 1;
+    max-width: 180px;
 }
 
 .navbar a:hover{
@@ -68,11 +70,12 @@
     text-shadow: 0px 0px 10px red;
 }
 
-.first-section{
+/* ABOUT ME SECTION - Fixed ID reference */
+#about-me {
     padding-top: clamp(60px, 10vh, 80px);
     background: linear-gradient(90deg, #D53369, #CBAD6D);
     background-size: 400% 400%;
-    animation: gradientAnimation71ewjkrzs 13s ease infinite;
+    animation: gradientAnimation2 13s ease infinite;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -82,7 +85,7 @@
     box-sizing: border-box;
 }
 
-@keyframes gradientAnimation71ewjkrzs {
+@keyframes gradientAnimation2 {
   0% { background-position: 0% 50%; }
   25% { background-position: 100% 50%; }
   50% { background-position: 100% 100%; }
@@ -96,7 +99,6 @@
     color: transparent;
     text-align: center;
     width: 90%;
-    /* Responsive font size */
     font-size: clamp(2.5rem, 8vw, 6.25rem);
 }
 
@@ -139,13 +141,13 @@
     width: 100%;
     box-sizing: border-box;
     max-width: 1400px;
-    /* Responsive font size */
     font-size: clamp(1.125rem, 3vw, 2.1875rem);
     line-height: 1.6;
     margin: 0 auto;
 }
 
-.second-section{
+/* SKILLS SECTION */
+#skills {
     padding-top: clamp(60px, 10vh, 80px);
     background-image: url(mountain1.avif);
     background-repeat: no-repeat;
@@ -168,7 +170,6 @@
     text-align: center;
     width: 90%;
     max-width: 1200px;
-    /* Responsive font size */
     font-size: clamp(1.375rem, 4vw, 2.8125rem);
     line-height: 1.5;
 }
@@ -206,11 +207,12 @@
     }
 }
 
-.third-section{
+/* PROJECTS SECTION */
+#projects {
     padding-top: clamp(60px, 10vh, 80px);
     background: linear-gradient(33deg, #603813, #B29F94);
     background-size: 400% 400%;
-    animation: gradientAnimationrhuoxppj9 4s ease infinite;
+    animation: gradientAnimation3 4s ease infinite;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -219,7 +221,7 @@
     min-height: 100vh;
 }
 
-@keyframes gradientAnimationrhuoxppj9 {
+@keyframes gradientAnimation3 {
   0% { background-position: 0% 50%; }
   25% { background-position: 100% 50%; }
   50% { background-position: 100% 100%; }
@@ -242,7 +244,6 @@
     animation: colors4 18s linear infinite, th-sect-h2 8s ease-in-out infinite;
     text-align: center;
     width: 90%;
-    /* Responsive font size */
     font-size: clamp(1.75rem, 5vw, 3.75rem);
     line-height: 1.4;
 }
@@ -311,7 +312,6 @@
     font-weight: bold;
     text-align: center;
     margin-top: 15px;
-    /* Responsive font size */
     font-size: clamp(1.125rem, 2.5vw, 1.875rem);
     width: 100%;
 }
@@ -342,10 +342,10 @@
     width: 100%;
     max-width: 400px;
     height: auto;
-    aspect-ratio: 4/3; /* Maintain 4:3 aspect ratio */
+    aspect-ratio: 4/3;
     border-radius: 10px;
     transition: transform 0.5s ease;
-    object-fit: cover; /* Ensure images fill container nicely */
+    object-fit: cover;
 }
 
 .palindrom-roman-phone:hover{
@@ -356,7 +356,7 @@
     filter: blur(10px);
 }
 
-/* Fourth-section */
+/* FOURTH SECTION */
 .fourth-section{
     margin-top: -40px;
     width: 100%;
@@ -378,7 +378,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.3); /* Dark overlay for better text readability */
+    background: rgba(0, 0, 0, 0.3);
     z-index: 1;
 }
 
@@ -397,7 +397,6 @@
     text-align: center;
     width: 100%;
     box-sizing: border-box;
-    /* Responsive font size */
     font-size: clamp(1.25rem, 3.5vw, 2.5rem);
     line-height: 1.6;
     max-width: 1200px;
@@ -447,7 +446,6 @@
     width: 100%;
     box-sizing: border-box;
     flex-wrap: wrap;
-    /* Responsive font size */
     font-size: clamp(1.125rem, 2.5vw, 1.875rem);
     line-height: 1.5;
     max-width: 900px;
@@ -469,13 +467,13 @@
     }
 }
 
-/* Footer */
-footer{
+/* FOOTER - Fixed ID reference */
+#contact-me {
     width: 100%;
     min-height: 50vh;
     background: linear-gradient(90deg, #9796F0, #FBC7D4);
     background-size: 400% 400%;
-    animation: gradientAnimationhvoxfdwal 8s ease infinite;
+    animation: gradientAnimation4 8s ease infinite;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -483,7 +481,7 @@ footer{
     box-sizing: border-box;
 }
 
-@keyframes gradientAnimationhvoxfdwal {
+@keyframes gradientAnimation4 {
   0% { background-position: 0% 50%; }
   25% { background-position: 100% 50%; }
   50% { background-position: 100% 100%; }
@@ -501,7 +499,6 @@ footer div{
     max-width: 1200px;
 }
 
-/* Icons */
 .icons-decor{
     text-decoration: none;
     display: flex;
@@ -516,7 +513,6 @@ footer div{
 }
 
 i{
-    /* Responsive icon size */
     font-size: clamp(2rem, 5vw, 3.125rem);
     transition: all 0.3s ease;
 }
@@ -644,7 +640,7 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Extra small devices (phones, less than 400px) */
+/* Responsive Design */
 @media (max-width: 400px) {
     .navbar a {
         font-size: 12px;
@@ -670,7 +666,6 @@ html {
     }
 }
 
-/* For very large screens (over 1920px) */
 @media (min-width: 1920px) {
     .first-section p,
     .second-section p,
@@ -680,7 +675,6 @@ html {
     }
 }
 
-/* Prevent animation overload on low-power devices */
 @media (prefers-reduced-motion: reduce) {
     * {
         animation-duration: 0.01ms !important;
