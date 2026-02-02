@@ -1,7 +1,7 @@
 /* ADD THIS AT THE TOP - Missing font import */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
-.bad{
+.bad {
     font-family: 'Poppins', sans-serif;
     font-size: clamp(1rem, 2vw, 1.8rem);
     font-weight: 400;
@@ -11,7 +11,7 @@
     overflow-x: hidden;
 }
 
-.navbar{
+.navbar {
     overflow: hidden;
     position: fixed;
     top: 0;
@@ -37,7 +37,7 @@
   100% { background-position: 0% 50%; }
 }
 
-.navbar a{
+.navbar a {
     display: block;
     color: white;
     text-align: center;
@@ -56,22 +56,22 @@
     max-width: 180px;
 }
 
-.navbar a:hover{
+.navbar a:hover {
     animation: bounce 0.5s linear;
 }
 
-@keyframes bounce{
-    0% { transform: translateY(0px);}
-    40% { transform: translateY(-10px);}
-    60% { transform: translateY(0px);}
+@keyframes bounce {
+    0% { transform: translateY(0px); }
+    40% { transform: translateY(-10px); }
+    60% { transform: translateY(0px); }
 }
 
-.navbar a:active{
+.navbar a:active {
     text-shadow: 0px 0px 10px red;
 }
 
-/* ABOUT ME SECTION - Fixed ID reference */
-#about-me {
+/* ABOUT ME SECTION */
+.first-section {
     padding-top: clamp(60px, 10vh, 80px);
     background: linear-gradient(90deg, #D53369, #CBAD6D);
     background-size: 400% 400%;
@@ -134,7 +134,7 @@
     }
 }
 
-.first-section p{
+.first-section p {
     padding: 0 clamp(15px, 5vw, 60px);
     font-weight: bold;
     text-align: center;
@@ -147,7 +147,7 @@
 }
 
 /* SKILLS SECTION */
-#skills {
+.second-section {
     padding-top: clamp(60px, 10vh, 80px);
     background-image: url(mountain1.avif);
     background-repeat: no-repeat;
@@ -174,7 +174,7 @@
     line-height: 1.5;
 }
 
-@keyframes bounceP{
+@keyframes bounceP {
     0%, 100% {
         transform: translate(0, 0) rotate(0deg);
     }
@@ -208,7 +208,7 @@
 }
 
 /* PROJECTS SECTION */
-#projects {
+.third-section {
     padding-top: clamp(60px, 10vh, 80px);
     background: linear-gradient(33deg, #603813, #B29F94);
     background-size: 400% 400%;
@@ -229,7 +229,7 @@
   100% { background-position: 0% 50%; }
 }
 
-.third-section h2{
+.third-section h2 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -248,7 +248,7 @@
     line-height: 1.4;
 }
 
-@keyframes colors4{
+@keyframes colors4 {
     0% {
         background-position: 0%;
     }
@@ -260,7 +260,7 @@
     }
 }
 
-@keyframes th-sect-h2{
+@keyframes th-sect-h2 {
     0%, 100% {
         transform: translate(0, 0) rotate(0deg);
     }
@@ -293,7 +293,7 @@
     }
 }
 
-.images-container{
+.images-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -305,7 +305,7 @@
     width: 100%;
 }
 
-.p1-p{
+.p1-p {
     color: white;
     display: flex;
     justify-content: center;
@@ -316,7 +316,7 @@
     width: 100%;
 }
 
-.p1-p:hover{
+.p1-p:hover {
     animation: p1-p 0.7s;
 }
 
@@ -329,7 +329,7 @@
     }
 }
 
-.link-dec{
+.link-dec {
     text-decoration: none;
     display: flex;
     flex-direction: column;
@@ -338,7 +338,7 @@
     max-width: 400px;
 }
 
-.palindrom-roman-phone{
+.palindrom-roman-phone {
     width: 100%;
     max-width: 400px;
     height: auto;
@@ -348,16 +348,16 @@
     object-fit: cover;
 }
 
-.palindrom-roman-phone:hover{
+.palindrom-roman-phone:hover {
     transform: scale(1.08);
 }
 
-.images-container:has(.palindrom-roman-phone:hover) .palindrom-roman-phone:not(:hover){
+.images-container:has(.palindrom-roman-phone:hover) .palindrom-roman-phone:not(:hover) {
     filter: blur(10px);
 }
 
 /* FOURTH SECTION */
-.fourth-section{
+.fourth-section {
     margin-top: -40px;
     width: 100%;
     min-height: 100vh;
@@ -387,7 +387,7 @@
     z-index: 2;
 }
 
-.fourth-sec-p1{
+.fourth-sec-p1 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -403,7 +403,7 @@
     margin: 0 auto;
 }
 
-@keyframes fourth-sec-p1{
+@keyframes fourth-sec-p1 {
     0%, 100% {
         transform: translate(0, 0) rotate(0deg);
     }
@@ -436,7 +436,7 @@
     }
 }
 
-.fourth-sec-p2{
+.fourth-sec-p2 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -452,13 +452,13 @@
     margin: 0 auto;
 }
 
-.contact-me{
+.contact-me {
     animation: contactbounce 1s linear infinite;
     display: inline-block;
     margin: 0 5px;
 }
 
-@keyframes contactbounce{
+@keyframes contactbounce {
     0%, 100% {
         transform: translateY(0px);
     }
@@ -467,8 +467,8 @@
     }
 }
 
-/* FOOTER - Fixed ID reference */
-#contact-me {
+/* FOOTER */
+footer {
     width: 100%;
     min-height: 50vh;
     background: linear-gradient(90deg, #9796F0, #FBC7D4);
@@ -489,7 +489,7 @@
   100% { background-position: 0% 50%; }
 }
 
-footer div{
+footer div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -499,7 +499,7 @@ footer div{
     max-width: 1200px;
 }
 
-.icons-decor{
+.icons-decor {
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -512,124 +512,74 @@ footer div{
     transform: scale(1.1);
 }
 
-i{
+i {
     font-size: clamp(2rem, 5vw, 3.125rem);
     transition: all 0.3s ease;
 }
 
-#email{
+#email {
     color: black;
     animation: emailbounceUp 2s linear infinite;
 }
 
 @keyframes emailbounceUp {
-    0% { 
-        transform: translateY(0px); 
-    }
-    25% { 
-        transform: translateY(-20px); 
-    }
-    50% { 
-        transform: translateY(0px); 
-    }
-    75% { 
-        transform: translateY(20px); 
-    }
-    100% { 
-        transform: translateY(0px); 
-    }
+    0% { transform: translateY(0px); }
+    25% { transform: translateY(-20px); }
+    50% { transform: translateY(0px); }
+    75% { transform: translateY(20px); }
+    100% { transform: translateY(0px); }
 }
 
-#github{
+#github {
     color: #00004e;
     animation: githubbouncedown 2s linear infinite;
 }
 
 @keyframes githubbouncedown {
-     0% { 
-        transform: translateY(0px); 
-    }
-    25% { 
-        transform: translateY(20px); 
-    }
-    50% { 
-        transform: translateY(0px); 
-    }
-    75% { 
-        transform: translateY(-20px); 
-    }
-    100% { 
-        transform: translateY(0px); 
-    }
+    0% { transform: translateY(0px); }
+    25% { transform: translateY(20px); }
+    50% { transform: translateY(0px); }
+    75% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
 }
 
-#whatsapp{
+#whatsapp {
     color: green;
     animation: whatsappbounceup 2s linear infinite;
 }
 
-@keyframes whatsappbounceup{
-    0% { 
-        transform: translateY(0px); 
-    }
-    25% { 
-        transform: translateY(-20px); 
-    }
-    50% { 
-        transform: translateY(0px); 
-    }
-    75% { 
-        transform: translateY(20px); 
-    }
-    100% { 
-        transform: translateY(0px); 
-    }
+@keyframes whatsappbounceup {
+    0% { transform: translateY(0px); }
+    25% { transform: translateY(-20px); }
+    50% { transform: translateY(0px); }
+    75% { transform: translateY(20px); }
+    100% { transform: translateY(0px); }
 }
 
-#instagram{
+#instagram {
     color: #ff1493;
     animation: instagrambouncedown 2s linear infinite;
 }
 
-@keyframes instagrambouncedown{
-     0% { 
-        transform: translateY(0px); 
-    }
-    25% { 
-        transform: translateY(20px); 
-    }
-    50% { 
-        transform: translateY(0px); 
-    }
-    75% { 
-        transform: translateY(-20px); 
-    }
-    100% { 
-        transform: translateY(0px); 
-    }
+@keyframes instagrambouncedown {
+    0% { transform: translateY(0px); }
+    25% { transform: translateY(20px); }
+    50% { transform: translateY(0px); }
+    75% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
 }
 
-#facebooke{
+#facebooke {
     color: #329aff;
     animation: facebookebouncedown 2s linear infinite;
 }
 
-@keyframes facebookebouncedown{
-     0% { 
-        transform: translateY(0px); 
-    }
-    25% { 
-        transform: translateY(-20px); 
-    }
-    50% { 
-        transform: translateY(0px); 
-    }
-    75% { 
-        transform: translateY(20px); 
-    }
-    100% { 
-        transform: translateY(0px); 
-    }
+@keyframes facebookebouncedown {
+    0% { transform: translateY(0px); }
+    25% { transform: translateY(-20px); }
+    50% { transform: translateY(0px); }
+    75% { transform: translateY(20px); }
+    100% { transform: translateY(0px); }
 }
 
 .first-section p, .second-section p, .fourth-section p {
